@@ -588,8 +588,14 @@ html {
 
 @media (min-width: 1024px) {
   .card {
-    width: 33.333333%;
+    width: 50%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .card {
+    width: 33.333333%;
   }
 }
 
@@ -647,7 +653,6 @@ html {
 
 @media (min-width: 1024px) {
   .card-body-left {
-    border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
 }
@@ -665,8 +670,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   background-color: var(--cyan);
   padding: 2.25rem;
   opacity: 0.8;
@@ -676,7 +681,6 @@ html {
   .card-body-right {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
 }
